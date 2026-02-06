@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyEyeOpticals | Premium Optical Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">MyEyeOpticals 👓</div>
+
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="#products">Products</a>
+
+    <div class="dropdown">
+      <span class="dropbtn">Explore ▾</span>
+      <div class="dropdown-content">
+        <a href="home-tryon.html">Home Try-On</a>
+        <a href="store-locator.html">Store Locator</a>
+        <a href="about.html">About Us</a>
+      </div>
+    </div>
+
+    <a href="tel:7799331415" class="call-btn">📞 7799331415</a>
+  </nav>
+
+  <!-- Mobile -->
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav id="mobileMenu" class="mobile-nav">
+  <a href="index.html">Home</a>
+  <a href="#products">Products</a>
+  <a href="home-tryon.html">Home Try-On</a>
+  <a href="store-locator.html">Store Locator</a>
+  <a href="about.html">About Us</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Premium Eyewear for Every Vision</h1>
+  <p>Trusted Optical Store in Visakhapatnam</p>
+  <a href="#products" class="hero-btn">Shop Now</a>
+</section>
+
+<!-- FILTERS -->
+<section class="filters">
+  <select id="genderFilter" onchange="filterProducts()">
+    <option value="all">All Genders</option>
+    <option value="men">Men</option>
+    <option value="women">Women</option>
+    <option value="kids">Kids</option>
+  </select>
+
+  <select id="brandFilter" onchange="filterProducts()">
+    <option value="all">All Brands</option>
+    <option value="rayban">Ray-Ban</option>
+    <option value="titan">Titan</option>
+    <option value="fastrack">Fastrack</option>
+    <option value="vogue">Vogue</option>
+  </select>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products">
+
+  <div class="product-card" data-gender="men" data-brand="rayban">
+    <img src="images/rayban.jpg" alt="Ray-Ban">
+    <h3>Ray-Ban Classic</h3>
+    <p class="price">₹4,999</p>
+    <a class="buy-btn"
+      href="https://wa.me/917799331415?text=Hi%20MyEyeOpticals%20👓%0AI’m%20interested%20in%20Ray-Ban%20Classic%20(₹4999)."
+      target="_blank">Buy Now</a>
+  </div>
+
+  <div class="product-card" data-gender="women" data-brand="vogue">
+    <img src="images/vogue.jpg" alt="Vogue">
+    <h3>Vogue Cat Eye</h3>
+    <p class="price">₹3,999</p>
+    <a class="buy-btn"
+      href="https://wa.me/917799331415?text=Hi%20MyEyeOpticals%20👓%0AI’m%20interested%20in%20Vogue%20Cat%20Eye%20(₹3999)."
+      target="_blank">Buy Now</a>
+  </div>
+
+  <div class="product-card" data-gender="kids" data-brand="fastrack">
+    <img src="images/fastrack.jpg" alt="Fastrack">
+    <h3>Fastrack Kids Frame</h3>
+    <p class="price">₹2,499</p>
+    <a class="buy-btn"
+      href="https://wa.me/917799331415?text=Hi%20MyEyeOpticals%20👓%0AI’m%20interested%20in%20Fastrack%20Kids%20Frame%20(₹2499)."
+      target="_blank">Buy Now</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p><strong>MyEyeOpticals</strong></p>
+  <p>
+    Door No 1-95, Shop No 6-7,<br>
+    Beside More Super Market, Car Shed Junction,<br>
+    Pothimallayapalem, Visakhapatnam – 530041
+  </p>
+  <p>📞 7799331415</p>
+</footer>
+
+</body>
+</html>
